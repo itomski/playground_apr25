@@ -1,5 +1,7 @@
 package de.lubowiecki;
 
+import java.util.Objects;
+
 public class Person {
 
     private String vorname;
@@ -33,5 +35,17 @@ public class Person {
 
     public void setNachname(String nachname) {
         this.nachname = nachname;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(vorname, person.vorname) && Objects.equals(nachname, person.nachname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vorname, nachname);
     }
 }
