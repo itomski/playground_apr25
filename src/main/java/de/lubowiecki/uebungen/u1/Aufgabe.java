@@ -11,4 +11,6 @@ public class Aufgabe {
     Über eine Schleife sollen alle Locations ausgegeben werden
     */
 
+
+
 }
