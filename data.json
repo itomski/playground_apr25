@@ -1,0 +1,12 @@
+{
+  "robots": [
+    {
+      "name": "R2-D2",
+      "typ": "Kommunikation"
+    },
+    {
+      "name": "HAL 9000",
+      "typ": "Kommunikation"
+    }
+  ]
+}

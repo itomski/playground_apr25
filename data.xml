@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<robots>
+    <robot nr="1">
+        <name>R2-D2</name>
+        <typ>Haushalt</typ>
+    </robot>
+
+    <robot nr="2">
+        <name>HAL 9000</name>
+        <typ>Kommunikation</typ>
+    </robot>
+</robots>
