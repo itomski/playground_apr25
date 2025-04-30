@@ -9,7 +9,7 @@ public class Aufgabe {
 
     Über die Eingabe von der Konsole können neue Kunden angelegt werden.
 
-    Beim Beenden des Programms werden die Liste der Kunden in die Datei geschrieben.
+    Beim Beenden des Programms wird die Liste der Kunden in die Datei geschrieben.
     */
 
 
