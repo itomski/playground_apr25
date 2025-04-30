@@ -2,7 +2,8 @@ package de.lubowiecki.uebungen.u2;
 
 public class Aufgabe {
 
-    /* Schreibe eine Klasse Fahrzeug mit den Eigenschaften
+    /*
+        Schreibe eine Klasse Fahrzeug mit den Eigenschaften
         Kennzeichen, Marke, Modell und Baujahr.
         Erweitere diese Klasse durch eine Klasse PKW, die 4 Insassen aufnehmen kann
         und eine Klasse LKW, die 8 Zuladungen aufnehmen kann.
