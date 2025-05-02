@@ -12,5 +12,4 @@ public class Aufgabe {
     Beim Beenden des Programms wird die Liste der Kunden in die Datei geschrieben.
     */
 
-
 }
