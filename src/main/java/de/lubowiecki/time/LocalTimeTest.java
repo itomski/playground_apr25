@@ -38,5 +38,10 @@ public class LocalTimeTest {
         final DateTimeFormatter DATE_FMT_OWN = DateTimeFormatter.ofPattern("d. MMM yy");
         System.out.println(ld.format(DATE_FMT_OWN));
 
+        // Eigene vordefinierte Formatierung benutzen
+        System.out.println(ld.format(TimeUtils.DATE_FMT));
+
+        // TimeUtils tu = new TimeUtils(); // Error: Hat einen privaten Konstruktor
+
     }
 }
