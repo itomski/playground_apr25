@@ -12,6 +12,4 @@ public class Aufgabe {
     Aufgabe:
     Implementiere die verschiedenen kompatibilen Dokumente
     */
-
-
 }
