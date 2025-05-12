@@ -10,6 +10,20 @@ public class Aufgabe {
     und Instanzierung die nachfolgende Nummer vergeben wird.
      */
 
+    public static void main(String[] args) {
+
+//        TeilnehmernummerGenerator gen = TeilnehmernummerGenerator.getInstance();
+//        System.out.println(gen.getNextNr());
+
+        Teilnehmer t1 = new Teilnehmer("Peter", "Parker");
+        Teilnehmer t2 = new Teilnehmer("Bruce", "Banner");
+        Teilnehmer t3 = new Teilnehmer("Carol", "Danvers");
+
+        System.out.println(t1);
+        System.out.println(t2);
+        System.out.println(t3);
+    }
+
     /*
     Aufgabe 2:
     Schreibe ein Programm für eine Einkaufsliste.
