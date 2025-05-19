@@ -29,6 +29,7 @@ public class Karte implements Comparable<Karte> {
 
     @Override
     public boolean equals(Object o) {
+        System.out.println("EQUALS");
         if (o == null || getClass() != o.getClass()) return false;
         Karte karte = (Karte) o;
         return FARBE == karte.FARBE && WERT == karte.WERT;
@@ -36,6 +37,7 @@ public class Karte implements Comparable<Karte> {
 
     @Override
     public int hashCode() {
+        System.out.println("HASHCODE");
         return Objects.hash(FARBE, WERT);
     }
 }
