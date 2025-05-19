@@ -11,7 +11,7 @@ public class Aufgabe {
         id, title, publication, author
     publication soll das Erscheinungsjahr sein.
 
-    Leide einige Bücher darin ab und frage diese anschließend ab.
+    Lege einige Bücher darin ab und frage diese anschließend ab.
      */
 
     /*
