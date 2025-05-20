@@ -1,20 +1,18 @@
 package de.lubowiecki.sql;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class MySQLConnectionTest {
 
     public static void main(String[] args) {
 
-        //final String URL = "jdbc:mysql://localhost:3306/library"; // XAMPP
-        final String URL = "jdbc:mysql://localhost:8889/library";
-        final String USER = "root";
-        final String PASSWORD = "root";
+        final String ROW_TPL = "| %-4d | %-25s | %-4d | %-25s |\n";
 
-        try(Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            System.out.println("Verbindung: OK");
+        try {
+            BookRepository repository = new BookRepository();
+            for (Book book : repository.findAll()) {
+                System.out.printf(ROW_TPL, book.getId(), book.getTitle(), book.getPublication(), book.getAuthor());
+            }
         }
         catch(SQLException e) {
             System.out.println("Verbindung: Fehlerhaft!");
