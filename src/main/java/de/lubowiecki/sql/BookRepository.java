@@ -8,17 +8,13 @@ public class BookRepository {
 
     public List<Book> findAll() throws SQLException {
 
-        //final String URL = "jdbc:mysql://localhost:3306/library"; // XAMPP
-        final String URL = "jdbc:mysql://localhost:8889/library";
-        final String USER = "root";
-        final String PASSWORD = "root"; // Unter XAMPP ist das Passwort leer
-
         // Verbindung zu DB aufbauen
-        try(Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
+        try(Connection connection = ConnectionFactory.getConnection();
             Statement stmt = connection.createStatement()) {
 
             // Daten aus der Tabelle holen
-            ResultSet results = stmt.executeQuery("SELECT * FROM books");
+            final String SQL = "SELECT * FROM books INNER JOIN authors ON books.author_id = authors.id";
+            ResultSet results = stmt.executeQuery(SQL);
 
             List<Book> books = new ArrayList<>();
 
@@ -27,7 +23,7 @@ public class BookRepository {
                 int id = results.getInt("id");
                 String title = results.getString("title");
                 int publication = results.getInt("publication");
-                String author = results.getString("author");
+                String author = results.getString("name");
                 books.add(new Book(id, title,publication, author));
             }
 
