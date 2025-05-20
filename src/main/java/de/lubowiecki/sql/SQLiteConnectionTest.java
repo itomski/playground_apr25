@@ -2,7 +2,7 @@ package de.lubowiecki.sql;
 
 import java.sql.*;
 
-public class ConnectionTest {
+public class SQLiteConnectionTest {
 
     private static final String URL = "jdbc:sqlite:" + System.getProperty("user.home") + "/kunden.db";
 
