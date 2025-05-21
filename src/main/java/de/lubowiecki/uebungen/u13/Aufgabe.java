@@ -9,6 +9,7 @@ public class Aufgabe {
     Schreibe 3 SQL Anweisungen zum Abfragen von Datensätzen (z.B. nach Id, Vorname, Nachname)
     Schreibe 3 SQL Anweisungen zum Updaten von Datensätzen
     Schreibe 2 SQL Anweisungen zum Löschen von Datensätzen (z.B. nach Id, Nachname)
+    Alle Anweisungen sollen über phpMyAdmin ausgeführt werden
      */
 
 }
