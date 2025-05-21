@@ -27,6 +27,7 @@ public class Aufgabe {
     Schreibe ein Programm für eine Task-Liste, die ihre Daten in der Datenbank (SQLite oed MySQL) speichert.
     Tasks bestehen aus Titel, Beschreibung, Datum und Status (erledigt oder noch offen).
     Du kannst dich für eine GUI (JavaFX) oder ein Konsolenprogramm entscheiden.
+    Es sollen erstmal nur die Tasks erfasst und angezeigt werden.
 
      */
 
