@@ -13,6 +13,10 @@ public class Aufgabe {
     Schreibe einen Builder für die Computer-Klasse.
     Die Computer-Klasse hat folgende Eigenschaften: Marke, CPU, RAM, Festplatte.
     Teste den Builder :-)
+
+    Das Pettern kann noch um ein Interface erweitert werden.
+    Das besprechen wir morgen.
+
      */
 
 }
