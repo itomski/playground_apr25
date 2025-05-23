@@ -1,4 +1,4 @@
-package de.lubowiecki.pattern;
+package de.lubowiecki.patterns.builder;
 
 public class Fahrzeug {
 

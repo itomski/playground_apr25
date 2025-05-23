@@ -19,4 +19,13 @@ public class Aufgabe {
 
      */
 
+    public static void main(String[] args) {
+
+        ComputerBuilder builder = new DeveloperComputerBuilder();
+        Computer c1 = builder.build();
+        System.out.println(c1);
+        Computer c2 = builder.build();
+        System.out.println(c2);
+
+    }
 }
