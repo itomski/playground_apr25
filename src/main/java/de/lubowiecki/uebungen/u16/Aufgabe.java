@@ -23,6 +23,16 @@ public class Aufgabe {
     Das Problem soll durch einen Adapter gelöst werden
 
 
+    Schreibe ein Composite für die Simulation der Bewegung von Drohnen.
+    Die Position der Drohne wird durch x, y, und z Angegeben.
+    z ist die höhe.
+
+    Das Composite definiert einen Schwarm von Drohnen-Objekten.
+    Füge 5 Drohnen zu und steuere diese über das Composite wie ein einziges.
+
+    (PS: Die Drohne ist lediglich eine Klasse mit 3 int eigenschaften und Gettern dafür.
+    Darüberhinaus gibt es dann eine changePosition(int x, int y, int z) - Methode für die Steuerung)
+
      */
 
 
