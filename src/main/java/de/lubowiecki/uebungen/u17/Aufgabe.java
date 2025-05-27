@@ -14,7 +14,7 @@ public class Aufgabe {
     aus deiner Sicht nötig wären
 
     Aufgabe 4
-    Entwerfe ein Sequenz-Diagramm für die Bestellung
+    Entwerfe ein Sequenz-Diagramm für die Bestellung.
      */
 
 }
