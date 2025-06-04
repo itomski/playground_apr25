@@ -12,6 +12,7 @@ public class VertragTest {
         Vertrag vertrag = new Vertrag();
         vertrag.setStart(LocalDate.now());
         vertrag.setEnde(LocalDate.now().plusMonths(24));
+        vertrag.setEnde("2025-10-03");
         vertrag.setVertragsPartner1(new Person("Peter", "Parker", "1985-10-22"));
         vertrag.setVertragsPartner2(new Person("Carol", "Danvers", "1982-07-01"));
         vertrag.setStatus(AKTIV);

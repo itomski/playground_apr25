@@ -34,12 +34,22 @@ public class Vertrag {
         this.start = start;
     }
 
+    public void setStart(String start) {
+        this.start = LocalDate.parse(start);
+    }
+
     public LocalDate getEnde() {
         return ende;
     }
 
+    // Überladen = Verschiedene Versionen einer Methode werden in der gleichen Klasse deklariert
+
     public void setEnde(LocalDate ende) {
         this.ende = ende;
+    }
+
+    public void setEnde(String ende) {
+        this.ende = LocalDate.parse(ende);
     }
 
     public Person getVertragsPartner1() {
