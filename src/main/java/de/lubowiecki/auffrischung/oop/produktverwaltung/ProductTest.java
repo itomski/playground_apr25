@@ -10,7 +10,8 @@ public class ProductTest {
 
         // Referenztyp: Produkt
         // Objekttyp: Produkt
-        Produkt p = new Produkt();
+        //Produkt p = new Produkt(); // Error: Klasse ist abstrakt
+        Produkt p = new Buch();
         System.out.println(p.getNr());
         System.out.println(p);
 
