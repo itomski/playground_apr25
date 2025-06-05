@@ -13,5 +13,4 @@ public class Aufgabe {
 
     Probiert es mit verschiedenen Datentypen.
      */
-
 }
