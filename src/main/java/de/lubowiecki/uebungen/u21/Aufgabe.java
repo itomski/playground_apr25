@@ -1,5 +1,7 @@
 package de.lubowiecki.uebungen.u21;
 
+
+
 public class Aufgabe {
 
     /*
@@ -12,6 +14,5 @@ public class Aufgabe {
     Predicate
 
      */
-
 
 }
