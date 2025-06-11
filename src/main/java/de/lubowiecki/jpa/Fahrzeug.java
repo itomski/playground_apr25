@@ -22,6 +22,9 @@ public class Fahrzeug {
 
     private int baujahr;
 
+    @ManyToOne
+    private Kunde kunde;
+
     public Fahrzeug() {
     }
 
@@ -70,6 +73,14 @@ public class Fahrzeug {
 
     public void setBaujahr(int baujahr) {
         this.baujahr = baujahr;
+    }
+
+    public Kunde getKunde() {
+        return kunde;
+    }
+
+    public void setKunde(Kunde kunde) {
+        this.kunde = kunde;
     }
 
     @Override

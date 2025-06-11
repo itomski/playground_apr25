@@ -3,6 +3,8 @@
     <persistence-unit name="JpaFirstStepsPU">
 
         <class>de.lubowiecki.jpa.Fahrzeug</class>
+        <class>de.lubowiecki.jpa.Kunde</class>
+        <class>de.lubowiecki.jpa.Adresse</class>
 
         <properties>
             <!--
@@ -15,9 +17,9 @@
             <property name="dialect" value="org.hibernate.community.dialect.SQLiteDialect"/>
 
             <property name="jakarta.persistence.schema-generation.database.action" value="update"/>
-            <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.format_sql" value="true"/>
-            <property name="hibernate.highlight_sql" value="true"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="false"/>
+            <property name="hibernate.highlight_sql" value="false"/>
 
         </properties>
 

@@ -5,6 +5,7 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.Query;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Queue;
 
@@ -33,7 +34,8 @@ public class App {
 //            System.out.println(fahrzeug);
 
             // FIND ALL
-//            Query q = em.createNamedQuery("Fahrzeug.findAll");
+            // Query q = em.createNamedQuery("Fahrzeug.findAll");
+//            Query q = em.createQuery("FROM Fahrzeug");
 //            List<Fahrzeug> fahrzeuge = q.getResultList();
 //
 //            for(Fahrzeug f : fahrzeuge) {
@@ -41,13 +43,40 @@ public class App {
 //            }
 
             // UPDATE
-            Fahrzeug fahrzeug = em.find(Fahrzeug.class, 2);
-            System.out.println(fahrzeug);
+//            Fahrzeug fahrzeug = em.find(Fahrzeug.class, 2);
+//            System.out.println(fahrzeug);
+//
+//            fahrzeug.setKennzeichen("HB:PU229");
+//
+//            em.getTransaction().begin();
+//            em.getTransaction().commit();
 
-            fahrzeug.setKennzeichen("HB:PU229");
+            // OneToOne
+//            Kunde kunde = new Kunde("Peter", "Parker", LocalDate.of(1982, 10, 2));
+//            Adresse adresse = new Adresse("Musterweg", "22a", "23456", "Musterstedt");
+//
+//            kunde.setAdresse(adresse); // Kunden mit einer Adresse verbinden
+//
+//            em.getTransaction().begin();
+//            em.persist(kunde);
+//            em.getTransaction().commit();
 
-            em.getTransaction().begin();
-            em.getTransaction().commit();
+            // FIND
+//            Kunde kunde = em.find(Kunde.class, 1);
+//            System.out.println(kunde);
+//            System.out.println(kunde.getAdresse());
+
+            // Fajrzeuge dem Kunden zuordnen und speichern
+//            Kunde kunde = em.find(Kunde.class, 1);
+//            kunde.addFahrzeug(new Fahrzeug("HH:XY897", "Ford", "Mustang", 1976));
+//            kunde.addFahrzeug(new Fahrzeug("HH:FA221", "Smart", "ForTwo", 2022));
+//
+//            em.getTransaction().begin();
+//            em.getTransaction().commit();
+
+            Kunde kunde = em.find(Kunde.class, 1);
+            System.out.println(kunde);
+            System.out.println(kunde.getFahrzeuge());
 
         }
         catch(Exception e) {
